@@ -1,4 +1,4 @@
-docker build -t dfhdfg/multi-client:latest -t almiskea/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t almiskea/multi-client:latest -t almiskea/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t almiskea/multi-server:latest -t almiseka/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t almiskea/multi-worker:latest -t almiskea/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push almiskea/multi-client:latest
