@@ -9,7 +9,6 @@ docker push almiskea/multi-client:$SHA
 docker push almiskea/multi-server:$SHA
 docker push almiskea/multi-worker:$SHA
 
-socker
 kubectl apply -f k8s
 kubectl set image deployment/server-deploymentcd server=almiskea/multi-server:$SHA
 kubectl set image deployment/client-deploymentcd client=almiskea/multi-client:$SHA
